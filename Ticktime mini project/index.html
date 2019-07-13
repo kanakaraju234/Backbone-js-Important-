@@ -1,0 +1,100 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="lib/bootstrap-4/css/bootstrap.min.css">
+    </head>
+    <body>
+        <aside class="bg-light text-center" style="height: 100%; width: 250px; float: left;">
+            <ul class="navbar-nav">
+                <li><a href="/">Service Setup</a></li> 
+                <li><a href="#Team">Team</a></li> 
+                <li><a href="#Location">Location</a></li> 
+            </ul>    
+
+        </aside>
+        <!--container fluid-->
+        <div class="container-fluid" >
+            <div id="container">
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <a href="#Service/services">
+                            <div class="card bg-success text-center text-white">
+                                <div class="card-body">services</div>
+                            </div>
+                        </a>
+                    </div>    
+                    <div class="col-sm-4">
+                        <a href="#Service/resources">
+                            <div class="card bg-warning text-center text-white">
+                                <div class="card-body">Resources</div>
+                            </div>
+                        </a>
+                    </div>  
+
+
+                    <div class="col-sm-4"> 
+                        <a href="#Service/classes">
+                            <div class="card bg-danger text-center text-white">
+                                <div class="card-body">Classes</div>
+                            </div>
+                        </a>
+                    </div>  
+
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <!--templates-->
+        <script type="text/template" id="service">
+            <div class="container">
+            <a href="/">Back</a>
+               <div class="card">
+                    <div class="card-header">Services</div>
+                     <div class="card-body">Services -- body</div>
+                      <div class="card-footer">Services --- footer</div>
+            </div>
+            <div>
+        </script>
+
+        <script type="text/template" id="classes">
+            <div class="container">
+            <a href="/">Back</a>
+               <div class="card">
+                    <div class="card-header">Classes</div>
+                     <div class="card-body">Classes -- body</div>
+                      <div class="card-footer">classes--- footer</div>
+            </div>
+            <div>
+        </script>
+
+        <script type="text/template" id="resources">
+            <div class="container">
+            <a href="/">Back</a>
+               <div class="card">
+                    <div class="card-header">Resourcess</div>
+                     <div class="card-body">Resources -- body</div>
+                      <div class="card-footer">Resources--- footer</div>
+            </div>
+            <div>
+        </script>
+
+        <script type="text/template" id="team">
+            <div class="container">
+                <h2>Hover Rows</h2>
+                <p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:</p>
+                
+               
+            </div>
+
+        </script>
+
+
+        <script src="lib/jquery.js"></script>
+        <script src="lib/underscore.js"></script>
+        <script src="lib/Backbone.js"></script>
+        <script src="router.js"></script>
+    </body>
+</html>
